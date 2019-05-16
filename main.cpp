@@ -2,17 +2,20 @@
 //
 
 #include "pch.h"
+#include <string>
 #include <iostream>
 #include <time.h>
+#include "race.h"
+#include "util.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!\n";
+	cout << welcome;
 	srand((unsigned)time(NULL));
 	Race race;
-	race.path.printPath();
+	race.path.print_path();
 	cout << "|" << race.hare.get_energy() << "/" << race.tortoise.get_energy() << endl;
 	int status = 0;
 

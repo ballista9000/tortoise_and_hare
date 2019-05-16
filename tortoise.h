@@ -14,5 +14,4 @@ public:
 	void restore_energy();
 
 	Tortoise();
-	~Tortoise();
 };
